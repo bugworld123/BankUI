@@ -94,7 +94,7 @@ public class RegistrationSteps {
         long expectedUserProfileId=Integer.parseInt(String.valueOf(nextValueList.get(0).get("next_val")));
         assertEquals(++expectedUserProfileId,actualUserProfileInfoMap.get("id"),"ID mismatch");
 
-        System.out.println("============");
+        System.out.println("============================");
 
     }
      // Automate Registration Steps by Deleting Previously Created User
