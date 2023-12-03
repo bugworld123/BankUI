@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="73.952">
+    <testcase classname="Digital Bank Registration Page" name="Positive Case. As a user, I want to successfully create Digital Bank account" time="24.747">
+        <system-out><![CDATA[Given User  navigates to Digital Bank signup page...........................passed
+When User creates account with following field with mocked email and ssn....passed
+Then user should be displayed with the message "Success Registration Successful. Please Login.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin I want to make sure users can not register without providing all valid data" time="4.941">
+        <system-out><![CDATA[Given User  navigates to Digital Bank signup page...........................passed
+When User creates account with following field with mocked email and ssn....passed
+Then User should see the "title" required field error message "Please select an item in the list.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin I want to make sure users can not register without providing all valid data 2" time="3.377">
+        <system-out><![CDATA[Given User  navigates to Digital Bank signup page...........................passed
+When User creates account with following field with mocked email and ssn....passed
+Then User should see the "firstName" required field error message "Please fill out this field.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin I want to make sure users can not register without providing all valid data 3" time="3.194">
+        <system-out><![CDATA[Given User  navigates to Digital Bank signup page...........................passed
+When User creates account with following field with mocked email and ssn....passed
+Then User should see the "lastName" required field error message "Please fill out this field.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Cases. As a Digital Bank Admin I want to make sure users can not register without providing all valid data 4" time="6.306">
+        <system-out><![CDATA[Given User  navigates to Digital Bank signup page...........................passed
+When User creates account with following field with mocked email and ssn....passed
+Then User should see the "gender" required field error message "Please select one of these options.".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Creating a new checking account" name="Create a standard individual checking account" time="31.195">
+        <system-out><![CDATA[Given the user logged in as "aidaiabd123@gmail.com" "Aidai2608@"............passed
+When the user creates a new checking account with following data............passed
+Then the user should see green "Successfully created new Standard Checking account named Elon Musk Second Checking" message.passed
+And the user should see newly added account cart............................passed
+And the user should see the following transactions..........................passed
+]]></system-out>
+    </testcase>
+</testsuite>
